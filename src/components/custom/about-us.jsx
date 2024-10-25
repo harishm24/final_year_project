@@ -38,13 +38,13 @@ const AboutUs = () => {
       icon: <Youtube className="w-6 h-6 text-red-600" />,
       name: "YouTube",
       description: "Watch our travel vlogs and guides",
-      link: "https://youtube.com/yourchannel", // Replace with your YouTube URL
+      link: "https://youtube.com/@1___rutu?si=Z9Cl-3UPHdQzNmvR", // Replace with your YouTube URL
     },
     {
       icon: <Instagram className="w-6 h-6 text-pink-600" />,
       name: "Instagram",
       description: "Follow our travel journey",
-      link: "https://instagram.com/yourprofile", // Replace with your Instagram URL
+      link: "https://www.instagram.com/prince.jpeg_/profilecard/?igsh=MTk1M3NmMjJ1OG5ucg==", // Replace with your Instagram URL
     }
   ];
 
