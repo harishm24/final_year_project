@@ -46,19 +46,22 @@ function Header() {
 
   return (
     <div className='p-3 shadow-sm flex justify-between items-center px-4'>
-      <img src='/logo.png' style={{ maxWidth: '250px', height: 'auto' }} alt="logo"/>
+      <img src='/logo.png' style={{ width: '100px', height: 'auto' }} alt="logo"/>
       <div >
        {user? 
        <div className='flex items-center gap-4'>
         <a href="/create-trip">
          <Button variant="outline" className= "rounded-full">Create Trip</Button> 
         </a>
+        <a href="/about-us">
+         <Button variant="outline" className= "rounded-full">About us</Button> 
+        </a>
         <a href="/my-trips">
         <Button variant="outline" className= "rounded-full">My Trips </Button> 
         </a>
          <Popover>
           <PopoverTrigger>
-            <img src={user?.picture} className='rounded-full w-[40px] h-[40px]' />
+            <img src={user?.picture} className='rounded-full w-[38px] h-[38px]' />
         
           </PopoverTrigger>
           <PopoverContent>

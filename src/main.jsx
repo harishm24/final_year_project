@@ -9,6 +9,7 @@ import { Toaster } from './components/ui/sonner.jsx'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import ViewTrip from './view-trip/[tripId]/index.jsx'
 import MyTrips from './my-trips/index.jsx'
+import AboutUs from './components/custom/about-us.jsx'; // Add this import
 
 
 const router = createBrowserRouter([
@@ -27,7 +28,13 @@ const router = createBrowserRouter([
 {
   path:'/my-trips',
   element:<MyTrips/>
+},
+{
+  path: '/about-us',  // Add this route
+  element: <AboutUs/>
 }
+
+
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
