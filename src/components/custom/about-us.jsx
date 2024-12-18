@@ -22,29 +22,39 @@ const AboutUs = () => {
 
   const testimonials = [
     {
-      text: "They created the perfect Italian getaway for us. Every detail was considered!",
-      author: "Sarah M.",
-      location: "Rome, Italy"
+      text: "I loved how the planner suggested destinations based on my budget and travel history. It saved me so much time!",
+      author: "Harshith H",
+      location: "Bangalore, Karnataka"
     },
     {
-      text: "The local experiences they recommended were absolutely incredible.",
-      author: "James P.",
-      location: "Tokyo, Japan"
+      text: "The interface is clean and easy to navigate. I was able to plan my trip in just a few clicks.",
+      author: "Chethan S",
+      location: "Bangalore, Karnataka"
+    },
+    {
+      text: "The budget tracker is fantastic. It helped me stay within my limits while still enjoying the best experiences.",
+      author: "Harish M",
+      location: "Bangalore, Karnataka"
+    },
+    {
+      text: "I loved how the AI could generate a complete itinerary within seconds, saving me hours of research.",
+      author: "Shilpa",
+      location: "Bangalore, Karnataka"
     }
   ];
 
   const socialLinks = [
     {
-      icon: <Youtube className="w-6 h-6 text-red-600" />,
-      name: "YouTube",
-      description: "Watch our travel vlogs and guides",
-      link: "https://youtube.com/@1___rutu?si=Z9Cl-3UPHdQzNmvR", // Replace with your YouTube URL
+      //icon: <Youtube className="w-6 h-6 text-red-600" />,
+      name: "Email",
+      description: "Mail us for any queries",
+      link: "mailto:ham21is@cmrit.ac.in", 
     },
     {
-      icon: <Instagram className="w-6 h-6 text-pink-600" />,
-      name: "Instagram",
-      description: "Follow our travel journey",
-      link: "https://www.instagram.com/prince.jpeg_/profilecard/?igsh=MTk1M3NmMjJ1OG5ucg==", // Replace with your Instagram URL
+      //icon: <Instagram className="w-6 h-6 text-pink-600" />,
+      name: "GitHub",
+      description: "Explore Dwell sync pro project on GitHub",
+      link: "https://github.com/harishm24", // Replace with your Instagram URL
     }
   ];
 
