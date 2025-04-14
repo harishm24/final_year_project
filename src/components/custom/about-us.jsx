@@ -1,46 +1,58 @@
-import React from 'react';
-import { Globe, Map, Heart, Clock, Wallet, Star, Youtube, Instagram } from 'lucide-react';
+import React from "react";
+import {
+  Globe,
+  Map,
+  Heart,
+  Clock,
+  Wallet,
+  Star,
+  Youtube,
+  Instagram,
+} from "lucide-react";
 
 const AboutUs = () => {
   const features = [
     {
       icon: <Map className="w-12 h-12 text-indigo-600" />,
       title: "Personalized Itineraries",
-      description: "Every journey is unique. We craft custom travel experiences that match your interests, style, and pace."
+      description:
+        "Every journey is unique. We craft custom travel experiences that match your interests, style, and pace.",
     },
     {
       icon: <Wallet className="w-12 h-12 text-indigo-600" />,
       title: "Budget-Friendly Planning",
-      description: "We work within your budget to maximize experiences without compromising on quality."
+      description:
+        "We work within your budget to maximize experiences without compromising on quality.",
     },
     {
       icon: <Clock className="w-12 h-12 text-indigo-600" />,
       title: "Time-Saving Expertise",
-      description: "Skip hours of research. Our experts handle all the planning details for you."
-    }
+      description:
+        "Skip hours of research. Our experts handle all the planning details for you.",
+    },
   ];
 
   const testimonials = [
     {
       text: "I loved how the planner suggested destinations based on my budget and travel history. It saved me so much time!",
       author: "Harshith H",
-      location: "Bangalore, Karnataka"
+      location: "Bangalore, Karnataka",
     },
     {
       text: "The interface is clean and easy to navigate. I was able to plan my trip in just a few clicks.",
       author: "Chethan S",
-      location: "Bangalore, Karnataka"
+      location: "Bangalore, Karnataka",
     },
     {
       text: "The budget tracker is fantastic. It helped me stay within my limits while still enjoying the best experiences.",
       author: "Harish M",
-      location: "Bangalore, Karnataka"
+      location: "Bangalore, Karnataka",
     },
     {
       text: "I loved how the AI could generate a complete itinerary within seconds, saving me hours of research.",
       author: "Shilpa",
-      location: "Bangalore, Karnataka"
-    }
+      location: "Bangalore, Karnataka",
+    },
   ];
 
   const socialLinks = [
@@ -48,14 +60,14 @@ const AboutUs = () => {
       //icon: <Youtube className="w-6 h-6 text-red-600" />,
       name: "Email",
       description: "Mail us for any queries",
-      link: "mailto:ham21is@cmrit.ac.in", 
+      link: "mailto:ham21is@cmrit.ac.in",
     },
     {
       //icon: <Instagram className="w-6 h-6 text-pink-600" />,
-      name: "GitHub",
+      name: "Instagram",
       description: "Explore Dwell sync pro project on GitHub",
-      link: "https://github.com/harishm24", // Replace with your Instagram URL
-    }
+      link: "https://www.instagram.com/", // Replace with your Instagram URL
+    },
   ];
 
   return (
@@ -68,7 +80,8 @@ const AboutUs = () => {
               Your Personal Travel Curator
             </h1>
             <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-              We transform your travel dreams into perfectly planned realities, creating memorable experiences tailored just for you.
+              We transform your travel dreams into perfectly planned realities,
+              creating memorable experiences tailored just for you.
             </p>
           </div>
         </div>
@@ -79,9 +92,13 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Globe className="w-16 h-16 text-indigo-600 mx-auto" />
-            <h2 className="mt-6 text-3xl font-bold text-gray-900">Our Mission</h2>
+            <h2 className="mt-6 text-3xl font-bold text-gray-900">
+              Our Mission
+            </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              To craft extraordinary travel experiences that reflect your unique story, connecting you with authentic local cultures and unforgettable moments.
+              To craft extraordinary travel experiences that reflect your unique
+              story, connecting you with authentic local cultures and
+              unforgettable moments.
             </p>
           </div>
         </div>
@@ -92,16 +109,15 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {features.map((feature, index) => (
-              <div key={index} className="text-center p-6 bg-white rounded-lg shadow-sm">
-                <div className="flex justify-center">
-                  {feature.icon}
-                </div>
+              <div
+                key={index}
+                className="text-center p-6 bg-white rounded-lg shadow-sm"
+              >
+                <div className="flex justify-center">{feature.icon}</div>
                 <h3 className="mt-4 text-xl font-semibold text-gray-900">
                   {feature.title}
                 </h3>
-                <p className="mt-2 text-gray-600">
-                  {feature.description}
-                </p>
+                <p className="mt-2 text-gray-600">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -145,7 +161,9 @@ const AboutUs = () => {
               <div key={index} className="p-6 bg-white rounded-lg">
                 <Star className="w-8 h-8 text-yellow-400 mb-4" />
                 <p className="text-gray-600 italic">"{testimonial.text}"</p>
-                <p className="mt-4 font-semibold text-gray-900">{testimonial.author}</p>
+                <p className="mt-4 font-semibold text-gray-900">
+                  {testimonial.author}
+                </p>
                 <p className="text-sm text-gray-500">{testimonial.location}</p>
               </div>
             ))}
@@ -162,8 +180,8 @@ const AboutUs = () => {
           <p className="text-xl text-indigo-100 mb-8">
             Let us help you create your perfect travel experience.
           </p>
-          <button 
-            onClick={() => window.location.href = '/create-trip'}
+          <button
+            onClick={() => (window.location.href = "/create-trip")}
             className="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors"
           >
             Plan Your Trip
